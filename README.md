@@ -1,6 +1,6 @@
 # AccessibleHomeAutomation
 
-The aim of this project is to build a small prototype of an automated house, using a Raspberry (Pi3 in my case, but everyone else should be fine) and an Arduino-compatible board.
+The aim of this project is to build a small prototype of an automated house, using a Raspberry Pi and an Arduino-compatible board.
 
 ## Aim of the project
 The target of the project is to help disabled, old or lazy people to control their own house with easy voice commands.
