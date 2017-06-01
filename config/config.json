@@ -1,0 +1,13 @@
+{
+	"INPUT_DEVICE": "default",
+	"PERIOD_SIZE": 1024,
+	"ARDUINO": "/dev/ttyUSB0",
+	"KEYWORD_LOG": "./log/keyword.log",
+	"COMMAND_LOG": "./log/command.log",
+	"HMM": "/usr/local/share/pocketsphinx/model/en-us",
+	"DICT": "./en-us.dic",
+	"LM": "./en-us.lm",
+	"KWS_TRESHOLD" : 1e-30,
+	"ACK_SENTENCE" : "RASPBERRY",
+	"REC_SEC" : 4	
+}

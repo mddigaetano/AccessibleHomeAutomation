@@ -1,0 +1,13 @@
+*.pyc
+
+audio/*
+!audio/ack.wav
+
+*.lm
+*.dic
+
+actions/*
+!actions/actions.py
+
+log/*
+
