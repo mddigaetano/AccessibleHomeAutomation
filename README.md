@@ -18,7 +18,7 @@ It can be accomplished with just a few prototyping platforms – meaning it is r
 CMU Sphinx is the only lightweight, open source, offline, supported and with already prepared models speech recognition software I found.
 It is really easy to build and use (that is, if you don't want to dwell into language learning...) and it also provides nice python wrappers.
 
-About PyAlsaAudio, it was necessary. Actually, I've started developing with the more famous PyAudio library, but it suffered poor performance on my Raspberry Pi 3. That's why I made the change.
+About PyAlsaAudio, it was necessary. Actually, I've started developing with the more famous PyAudio library, but it suffered poor performance on my Raspberry Pi 3. That's why I changed it.
 
 ### How to use it
 Right now, it doesn't provide any kind of configuration file, that is needed to specify various directory locations, parameters and so on, so if you want to use it, you'll have to edit the first part of the program to make it work.
