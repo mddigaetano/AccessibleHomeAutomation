@@ -6,8 +6,5 @@ audio/*
 *.lm
 *.dic
 
-actions/*
-!actions/actions.py
-
 log/*
 
