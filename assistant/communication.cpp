@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include "communication.h"
+#include "communication.hpp"
 
 void full_receive() {
   static bool inProgress = false;

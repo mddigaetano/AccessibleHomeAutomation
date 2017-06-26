@@ -1,7 +1,7 @@
 #ifndef COLORS
   #define COLORS
-  #define PIN_RED 5
-  #define PIN_GREEN 6
+  #define PIN_RED 6
+  #define PIN_GREEN 9
   #define PIN_BLUE 10
 #endif
 
@@ -16,7 +16,7 @@ const int WHITE[] = {255, 255, 255};
 
 const int OFF[] = {0, 0, 0};
 
-const long timing = 50;
+const long timer_rgb = 50;
 
 enum state_t{
   FIXED,

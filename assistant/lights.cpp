@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include "lights.h"
+#include "lights.hpp"
 
 void lights(const char * message){
   char * room;

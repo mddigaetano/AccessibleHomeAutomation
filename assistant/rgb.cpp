@@ -1,6 +1,6 @@
 #include <Arduino.h>
-#include "debug.h"
-#include "rgb.h"
+#include "debug.hpp"
+#include "rgb.hpp"
 
 void rgb(const char * message){
   #if VERBOSITY

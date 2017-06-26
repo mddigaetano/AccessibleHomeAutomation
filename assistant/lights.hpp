@@ -1,7 +1,7 @@
 #ifndef ROOMS
   #define ROOMS
-  #define PIN_DINING 2
-  #define PIN_KITCHEN 3
+  #define PIN_DINING 3
+  #define PIN_KITCHEN 4
   #define PIN_BATHROOM 11
   #define PIN_BEDROOM 12
 #endif

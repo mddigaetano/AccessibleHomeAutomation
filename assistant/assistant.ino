@@ -1,8 +1,9 @@
-#include "debug.h"
-#include "communication.h"
-#include "lights.h"
-#include "rgb.h"
-#include "fan.h"
+#include "debug.hpp"
+#include "communication.hpp"
+#include "lights.hpp"
+#include "rgb.hpp"
+#include "fan.hpp"
+#include "gas.hpp"
 
 void setup()
 {
@@ -27,6 +28,10 @@ void setup()
   pinMode(PIN_FAN2,OUTPUT);
   analogWrite(PIN_FAN2, 0);
 
+  pinMode(PIN_GAS, INPUT);
+  pinMode(PIN_BUZZER, OUTPUT);
+  digitalWrite(PIN_BUZZER, 0);
+
   Serial.begin(9600);
     
   #if VERBOSITY
@@ -34,7 +39,8 @@ void setup()
   #endif
 }
 
-long seconds = 0;
+long millis_rgb = 0;
+long millis_gas = 0;
 
 void loop()
 {
@@ -68,8 +74,13 @@ void loop()
     }
   }
   
-  if((millis() - seconds) > timing && state == FADE){
+  if((millis() - millis_rgb) > timer_rgb && state == FADE){
     rgb_fade();
-    seconds = millis();
+    millis_rgb = millis();
+  }
+
+  if((millis() - millis_gas) > timer_gas){
+    gas();
+    millis_gas = millis();
   }
 }

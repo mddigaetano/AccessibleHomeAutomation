@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include "fan.h"
+#include "fan.hpp"
 
 void fan(const char * message){
   if(strcmp(message, "ON") == 0){
